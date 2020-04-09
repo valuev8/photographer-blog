@@ -187,6 +187,17 @@ blockquote p {
 	width: 100%;
 	position: relative;
 }
+.no-padding {
+	padding-top: 0;
+}
+.column-wrapper_text p {
+	font-size: 16px;
+	font-weight: 300;
+}
+.btn-center {
+	margin-left: 50%;
+	transform: translateX(-77px);
+}
 .content {
 	float: left;
 	width: 100%;
@@ -2639,23 +2650,27 @@ section.single-content-section {
 /*------ facts ------------------------------------------------*/
 .inline-facts-holder {
 	margin:40px 0 50px;
+	display: flex;
+	justify-content: space-between;
 }
 .inline-facts {
 	float:left;
 	width:25%;
-	text-align:left;
-	padding:0 10px
+	text-align:center;
+	padding:0 10px;
 }
 .inline-facts .num {
 	font-size:38px;
 	font-weight:700;
+	text-align: center;
 }
 .inline-facts h6 {
     font-family: 'Playfair+Display', serif;
 	font-style:italic;
-	color:#999;
-	background:#f1f1f1;
+	text-align: center;
+	font-size: 14px;
 	padding:10px 20px;
+	border: 1px solid #999;
 }
 /*------ scroll nav ------------------------------------------------*/
 .scroll-nav-wrap , .fixed-bottom-content {
@@ -2740,17 +2755,17 @@ section.single-content-section {
 	float:left;
 	width:100%;
 	position:relative;
-	background:#f5f5f5;
 	margin-bottom:30px;
+	border-radius: 5px;
+	border: 1px solid #999;
 }
 
 .serv-item img {
 	width:100%;
-	height:auto;
-
+	height:227px;
 }
 .serv-item h4 {
-	font-size:18px;
+	font-size:21px;
 	padding-bottom:4px;
 	font-weight:700;
 	text-align:left;
@@ -2760,6 +2775,10 @@ section.single-content-section {
 	width:100%;
 	list-style: circle;
 	padding-left:20px;
+	font-size: 16px;
+}
+.serv-item p {
+	font-size: 16px;
 }
 .serv-item ul li {
 	float:left;
@@ -2791,7 +2810,12 @@ section.single-content-section {
 .serv-text {
 	width:50%;
 	padding:20px 25px;
-
+}
+.serv-text h4,
+.serv-text p,
+.serv-text ul,
+.serv-text li {
+	color: #fff !important;
 }
 /* --------- Skills --------------------------------------*/
 .skill-name {
@@ -3866,6 +3890,12 @@ section.single-content-section {
 .error-wrap .err-btn i {
 	padding-left:12px;
 }
+
+/* ---- about ---- */
+.about-me-bg {
+	background-position: 0 -65px !important;
+	background-repeat: no-repeat;
+}
 /* ------responsive------------------------------------------------------------ */
 @media only screen and (max-width: 1365px) {
 .hero-slider_details_wrap {
@@ -4283,9 +4313,12 @@ section.single-content-section {
 .column-wrapper {
     padding: 40px 10px 120px;
 }
-.serv-text  , .serv-media , .policy-box{
+.serv-media , .policy-box{
     width: 100%;
     padding-left: 0;
+}
+.serv-text {
+	width: 100%;
 }
 .serv-item {
 	margin-bottom:40px;
@@ -4381,6 +4414,10 @@ section {
 }
 .fs-slider2 .swiper-container {
 	height:100%;
+}
+.inline-facts-holder {
+	flex-direction: column;
+	align-items: center;
 }
 }
 @media only screen and (max-width: 530px) {
