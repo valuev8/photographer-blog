@@ -3896,6 +3896,11 @@ section.single-content-section {
 	background-position: 0 -65px !important;
 	background-repeat: no-repeat;
 }
+/* ---- contact ---- */
+.contact-bg {
+	background-position: 0 70% !important;
+	background-repeat: no-repeat;
+}
 /* ------responsive------------------------------------------------------------ */
 @media only screen and (max-width: 1365px) {
 .hero-slider_details_wrap {
